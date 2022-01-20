@@ -52,11 +52,11 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 }
 .lnb .lnb-api a,
 .lnb .lnb-examples a {
-    color: rgba(63,106,113,.99);
+    color: rgba(103,146,153,.99);
 }
 .lnb .lnb-api a:hover,
 .lnb .lnb-examples a:hover {
-    color: rgba(83,126,133,.99);
+    color: rgba(123,166,173,.99);
 }
 .lnb .lnb-api .toggle-subnav {
     padding: 0 3px;
