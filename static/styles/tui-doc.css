@@ -44,10 +44,10 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
     border-bottom: 1px solid #1f292e;
 }
 .lnb .lnb-api h3 a {
-    color: rgba(23,66,73,.99);
+    color:  rgba(32, 163, 183, 1);
 }
 .lnb .lnb-api h3 a:hover {
-    color: rgba(23,66,73,.801);
+    color:  rgba(52, 173, 203, 1)
     text-decoration: underline;
 }
 .lnb .lnb-api a,
