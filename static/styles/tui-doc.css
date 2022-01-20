@@ -29,7 +29,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 }
 .lnb h3 {
     font-size: 1.5em;
-    color: #fa3282;
+    color: #rgba(32, 163, 183, 1);;
 }
 .lnb h3 a {
     color: #fa3282;
