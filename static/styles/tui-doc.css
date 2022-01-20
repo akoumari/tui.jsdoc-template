@@ -166,9 +166,9 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
     font-size: 9pt;
 }
 .main section article dl h4 .type-signature {
-    font-size: 9pt;
+    font-size: 18pt;
     color: #31708f;
-    font-weight: xx-large;
+    font-weight: bold;
 }
 .main section article dl dt .name {
     padding: 3px 10px;
