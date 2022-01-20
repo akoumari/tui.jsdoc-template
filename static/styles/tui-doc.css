@@ -29,7 +29,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 }
 .lnb h3 {
     font-size: 1.5em;
-    color: #rgba(32, 163, 183, 1);;
+    color: rgba(32, 163, 183, 1);
 }
 .lnb h3 a {
     color: #fa3282;
@@ -154,7 +154,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 }
 .main section article h3.subsection-title {
     font-size:16px;
-    color: #fa3282;
+    color:rgba(32, 163, 183, 1);
     padding:35px 0 0 5px;
     border-bottom: 1px solid #dedede;
 }
@@ -168,7 +168,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 .main section article dl h4 .type-signature {
     font-size: 9pt;
     color: #31708f;
-    font-weight: normal;
+    font-weight: xx-large;
 }
 .main section article dl dt .name {
     padding: 3px 10px;
