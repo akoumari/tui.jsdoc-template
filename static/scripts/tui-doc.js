@@ -199,7 +199,8 @@ $lnb.find('.lnb-api').each(function() {
         let currentPath = window.location.pathname.split("/");
         let end = currentPath.split(".")[0]
         let src = $(this).attr("href").split(".html")[0];
-       
+       console.log(end);
+        console.log(src);
         if( src.indexOf(currentPath) != -1){
             $(this).children().removeClass('hidden')
             
