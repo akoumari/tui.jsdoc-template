@@ -772,7 +772,7 @@ exports.publish = function(taffyData, opts, tutorials) {
 
         var myNamespaces = helper.find(namespaces, {longname: longname});
         if (myNamespaces.length) {
-            generate('Namespace: ' + myNamespaces[0].name, myNamespaces, helper.longnameToUrl[longname]);
+            generate('Namespace: ' + longname, myNamespaces, helper.longnameToUrl[longname]);
         }
 
         var myMixins = helper.find(mixins, {longname: longname});
