@@ -203,7 +203,7 @@ $lnb.find('.lnb-api').each(function() {
        console.log(end);
         console.log(src);
         if( src.indexOf(currentPath) != -1){
-            $(this).children().removeClass('hidden')
+            $(this).parent().removeClass('hidden')
             
         }
         });
