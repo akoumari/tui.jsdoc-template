@@ -204,10 +204,10 @@ $lnb.find('.lnb-api').each(function() {
         if(src==end){
             console.log("end"+end);
             console.log("src"+src);
-            $(this).next().toggleClass('hidden');
-            $(this).find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             $(this).parent().parent().parent().toggleClass('hidden');
             $(this).parent().parent().parent().prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+            $(this).next().toggleClass('hidden');
+            $(this).find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             
         }
         });
