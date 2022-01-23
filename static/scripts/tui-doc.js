@@ -200,10 +200,10 @@ $lnb.find('.lnb-api').each(function() {
         let end = currentPath[currentPath.length-1].split(".")[0]
         let src = $(this).prev().attr("href");
         src = src?src.split(".html")[0]:"";
-      
+                   console.log("end"+end);
+        console.log("src"+src);
         if( src.indexOf(currentPath) != -1){
-             console.log(end);
-        console.log(src);
+
             $(this).next().toggleClass('hidden');
             
             
