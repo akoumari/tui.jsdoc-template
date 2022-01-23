@@ -391,7 +391,7 @@ function buildSubNavMembersNamespace(list, type) {
         html += '<div class="member-type">' + type + '</div>';
         html += '<ul class="inner">';
         list.forEach(function(item) {
-            let linkHtml = linkto(item.longname, item.name, ''));
+            let linkHtml = linkto(item.longname, item.name, '');
             html += '<li>' + makeCollapsibleItemHtmlInNav(item, linkHtml) + '</li>';
         });
         html += '</ul>';
