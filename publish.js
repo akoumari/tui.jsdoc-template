@@ -333,7 +333,10 @@ function attachModuleSymbols(doclets, modules) {
  */
 function buildSubNav(obj) {
     var longname = obj.longname;
+    
     console.log(longname);
+    console.log(obj);
+    
     var members = find({
         kind: 'member',
         memberof: longname
