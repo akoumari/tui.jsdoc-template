@@ -197,14 +197,15 @@ $lnb.find('.lnb-api').each(function() {
         }).each(function() {
             $(this).removeClass('hidden').on('click', toggleSubNav);
         let currentPath = window.location.pathname.split("/");
-        let end = currentPath[currentPath.length-1].split(".")[0]
+        let end = currentPath[currentPath.length-1].split(".html")[0]
         let src = $(this).prev().attr("href");
-        src = src?src.split(".")[0]:"";
+        src = src?src.split(".html")[0]:"";
                  
         if(src==end){
             console.log("end"+end);
             console.log("src"+src);
             $(this).next().toggleClass('hidden');
+            $(this).find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             
             
         }
