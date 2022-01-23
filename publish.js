@@ -341,6 +341,10 @@ function buildSubNav(obj) {
         kind: 'member',
         memberof: longname
     });
+     var namespaces = find({
+        kind: 'namespace',
+        memberof: longname
+    });
     var methods = find({
         kind: 'function',
         memberof: longname
@@ -359,6 +363,7 @@ function buildSubNav(obj) {
     html += buildSubNavMembers(methods, 'Methods');
     html += buildSubNavMembers(events, 'Events');
     html += buildSubNavMembers(typedef, 'Typedef');
+    html += buildSubNavMembers(namespaces, 'Namespace');
     html += '</div>';
 
     return html;
