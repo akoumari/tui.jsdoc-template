@@ -199,6 +199,7 @@ $lnb.find('.lnb-api').each(function() {
         let currentPath = window.location.pathname.split("/");
         let end = currentPath[currentPath.length-1].split(".")[0]
         let src = $(this).attr("href").split(".html")[0];
+        src = src?src.split(".html")[0]:"";
        console.log(end);
         console.log(src);
         if( src.indexOf(currentPath) != -1){
