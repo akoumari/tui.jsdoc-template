@@ -206,7 +206,8 @@ $lnb.find('.lnb-api').each(function() {
             console.log("src"+src);
             $(this).next().toggleClass('hidden');
             $(this).find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-            
+            $(this).parent().parent().next().toggleClass('hidden');
+            $(this).parent().parent().prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             
         }
         });
