@@ -398,7 +398,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
             if ( !hasOwnProp.call(item, 'longname') ) {
                 itemsNav += '<li>' + linktoFn('', item.name) + buildSubNav(item) + '</li>';
             }
-            else if ( !hasOwnProp.call(itemsSeen, item.longname) && item.ancestors.length <=0) {
+            else if ( !hasOwnProp.call(itemsSeen, item.longname)) {
                 var displayName;
                 if (env.conf.templates.default.useLongnameInNav || item.kind === 'namespace') {
                     displayName = item.longname;
