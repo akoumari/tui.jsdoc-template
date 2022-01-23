@@ -200,10 +200,10 @@ $lnb.find('.lnb-api').each(function() {
         let end = currentPath[currentPath.length-1].split(".html")[0]
         let src = $(this).prev().attr("href");
         src = src?src.split(".html")[0]:"";
-                 
+                    console.log("\n end "+end);
+            console.log("src "+src);        
         if(src==end){
-            console.log("end"+end);
-            console.log("src"+src);
+
             $(this).parent().parent().parent().toggleClass('hidden');
             $(this).parent().parent().parent().prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             $(this).next().toggleClass('hidden');
