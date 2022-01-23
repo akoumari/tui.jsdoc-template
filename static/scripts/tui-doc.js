@@ -196,6 +196,10 @@ $lnb.find('.lnb-api').each(function() {
             return $(this).next(':empty').length === 0;
         }).each(function() {
             $(this).removeClass('hidden').on('click', toggleSubNav);
+        
+        });
+     $(this).find('.toggle-subnav')
+        .each(function() {
         let currentPath = window.location.pathname.split("/");
         let end = currentPath[currentPath.length-1].split(".html")[0]
         let src = $(this).prev().attr("href");
