@@ -196,5 +196,8 @@ $lnb.find('.lnb-api').each(function() {
             return $(this).next(':empty').length === 0;
         }).each(function() {
             $(this).removeClass('hidden').on('click', toggleSubNav);
+        if($(this).activeElement||$(this).children().activeElement){
+            $(this).children().removeClass('hidden')
+        }
         });
 });
