@@ -202,6 +202,7 @@ $lnb.find('.lnb-api').each(function() {
        
         if( src.indexOf(currentPath) != -1){
             $(this).children().removeClass('hidden')
+            $(this).parents().removeClass('hidden').css("color:red")
         }
         });
 });
