@@ -197,12 +197,12 @@ $lnb.find('.lnb-api').each(function() {
         }).each(function() {
             $(this).removeClass('hidden').on('click', toggleSubNav);
         let currentPath = window.location.pathname.split("/");
-        let end = currentPath.split(".html")[0]
+        let end = currentPath.split(".")[0]
         let src = $(this).attr("href").split(".html")[0];
        
         if( src.indexOf(currentPath) != -1){
             $(this).children().removeClass('hidden')
-            $(this).parents().removeClass('hidden').css("color:red")
+            
         }
         });
 });
