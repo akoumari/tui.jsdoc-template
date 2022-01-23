@@ -363,7 +363,7 @@ function buildSubNav(obj) {
     html += buildSubNavMembers(methods, 'Methods');
     html += buildSubNavMembers(events, 'Events');
     html += buildSubNavMembers(typedef, 'Typedef');
-    html += buildSubNavMembers(namespaces, 'Namespace');
+    html += buildSubNavMembersNamespace(namespaces, 'Namespace');
     html += '</div>';
 
     return html;
@@ -383,7 +383,22 @@ function buildSubNavMembers(list, type) {
 
     return html;
 }
+function buildSubNavMembersNamespace(list, type) {
+    var html = '';
 
+    if (list.length) {
+        
+        html += '<div class="member-type">' + type + '</div>';
+        html += '<ul class="inner">';
+        list.forEach(function(item) {
+            let linkHtml = linktoFn(item.longname, displayName.replace(/\b(module|event):/g, ''));
+            html += '<li>' + makeCollapsibleItemHtmlInNav(item, linkHtml) + '</li>';
+        });
+        html += '</ul>';
+    }
+
+    return html;
+}
 function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
     var nav = '';
 
@@ -398,7 +413,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
             if ( !hasOwnProp.call(item, 'longname') ) {
                 itemsNav += '<li>' + linktoFn('', item.name) + buildSubNav(item) + '</li>';
             }
-            else if ( !hasOwnProp.call(itemsSeen, item.longname)) {
+            else if ( !hasOwnProp.call(itemsSeen, item.longname) && item.ancestors.length <=0) {
                 var displayName;
                 if (env.conf.templates.default.useLongnameInNav || item.kind === 'namespace') {
                     displayName = item.longname;
