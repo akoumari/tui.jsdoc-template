@@ -197,7 +197,7 @@ $lnb.find('.lnb-api').each(function() {
         }).each(function() {
             $(this).removeClass('hidden').on('click', toggleSubNav);
         let currentPath = window.location.pathname.split("/");
-        let end = currentPath.split(".")[0]
+        let end = currentPath[currentPath.length-1].split(".")[0]
         let src = $(this).attr("href").split(".html")[0];
        console.log(end);
         console.log(src);
