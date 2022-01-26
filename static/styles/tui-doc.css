@@ -9,12 +9,13 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
     width: 290px;
     position: absolute;
     cursor:pointer !important;
-    bottom: 30px;
+    bottom: 0px;
     top: 0;
     overflow: auto;
     left: 0;
     background-color: #161b1d;
     padding: 0 20px;
+    padding-bottom: 20px;
 }
 .lnb::-webkit-scrollbar {
     width: 10px;
@@ -297,6 +298,7 @@ footer {
     background-color: rgb(29,50,53);
     color: #ebf8ff;
     text-align: center;
+    z-index: -1;
 }
 footer a{
     color: rgba(32, 163, 183, 1);
