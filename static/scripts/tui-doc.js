@@ -27,10 +27,7 @@ var $lnb = $('#lnb');
 var $main = $('#main');
 
 function resize(event) {
-    var clientX = event.clientX;
-
-    clientX = Math.max(200, clientX);
-    clientX = Math.min(500, clientX);
+    var clientX = 290
 
     $lnb.css('width', clientX);
     $resizer.css('left', clientX);
