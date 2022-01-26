@@ -93,7 +93,7 @@ function getSignatureAttributes(item) {
     var attributes = [];
 
     if (item.optional) {
-        attributes.push('opt');
+        attributes.push('?opt');
     }
 
     if (item.nullable === true) {
