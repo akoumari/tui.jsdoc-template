@@ -75,16 +75,18 @@ if (height) {
         <input type="text" placeholder="Search">
         <ul></ul>
     </div>
-    <?js if (examples) { ?>
-        <ol class="lnb-tab">
-            <li id="api-tab">
-                <a href="#"><h4><?js= apiName ?></h4></a>
-            </li>
-            <li id="examples-tab">
-                <a href="#"><h4><?js= tutorialsName ?></h4></a>
-            </li>
-        </ol>
-    <?js } ?>
+        <div class="nav-list">
+        <?js if (examples) { ?>
+            <ol class="lnb-tab">
+                <li id="api-tab">
+                    <a href="#"><h4><?js= apiName ?></h4></a>
+                </li>
+                <li id="examples-tab">
+                    <a href="#"><h4><?js= tutorialsName ?></h4></a>
+                </li>
+            </ol>
+        <?js } ?>
+    </div>
     <?js= this.nav ?>
 </nav>
 <div id="resizer"></div>
