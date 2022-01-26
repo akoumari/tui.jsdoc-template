@@ -8,12 +8,29 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 .lnb {
     width: 290px;
     position: absolute;
+    cursor:pointer !important;
     bottom: 30px;
     top: 0;
     overflow: auto;
     left: 0;
     background-color: #161b1d;
     padding: 0 20px;
+}
+.lnb::-webkit-scrollbar {
+    width: 10px;
+    padding-right: 50px !important;    
+}
+.lnb::-webkit-scrollbar-track {
+    background: rgba(179, 179, 179, 0.336) !important;
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+    margin-bottom: 5px !important;
+    border-radius: 16px;
+    
+}
+.lnb::-webkit-scrollbar-thumb {
+    background:rgba(241, 241, 241, 0.712);
+    border-radius: 16px;
 }
 .lnb .logo {
     height: 13px;
@@ -277,11 +294,18 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: rgba(32, 163, 183, 1);
+    background-color: rgb(29,50,53);
     color: #ebf8ff;
     text-align: center;
 }
-
+footer a{
+    color: rgba(32, 163, 183, 1);
+    font-weight: bold;
+}
+footer a:hover{
+    color: rgb(22, 127, 143);
+    font-weight:bolder;
+}
 /* README*/
 .readme {
     font-size: 14px;
@@ -444,8 +468,8 @@ footer {
     position: fixed;
     left: 290px;
     height: 100%;
-    background-color: rgba(32, 163, 183, 1);
-    cursor: col-resize;
+    background-color: rgb(29,50,53);
+    cursor: auto;
 }
 span.param-type {
     color: #aaa;
