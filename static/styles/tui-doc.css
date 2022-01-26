@@ -264,7 +264,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
     font-weight: bold;
 }
 .main section article dl h4 .signature {
-    font-size: 9pt;
+    font-size: large;
 }
 .main section article dl h4 .type-signature {
     font-size: 18pt;
@@ -274,6 +274,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
 .main section article dl dt .name {
     padding: 3px 10px;
     background-color: #f4f7f8;
+    font-size: large;
 }
 .main section article dl dd {
     padding: 0 30px;
