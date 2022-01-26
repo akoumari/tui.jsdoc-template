@@ -267,7 +267,7 @@ ul, ol, li {list-style:none; padding-left:0; margin-left:0;}
     font-size: large;
 }
 .main section article dl h4 .type-signature {
-    font-size: 18pt;
+    font-size: large;
     color: #31708f;
     font-weight: bold;
 }
